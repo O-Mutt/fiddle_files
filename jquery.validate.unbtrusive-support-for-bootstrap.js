@@ -42,13 +42,5 @@ $.validator.setDefaults({
     unhighlight: function (element) {
         console.log("call unhighlight");
         $(element).closest(".form-group").removeClass("error").removeClass("has-error");
-    },
-    onclick: function (one, two) {
-        console.log(one);
-        console.log(two);
-    },
-    onblur: function(one, two) {
-        console.log(one);
-        console.log(two);
     }
 });
