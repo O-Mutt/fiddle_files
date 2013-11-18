@@ -35,12 +35,10 @@ $(function () {
 
 //Update that validator
 $.validator.setDefaults({
-    highlight: function (element) {
-        console.log("call highlight");
+    highlight: function(element) {
         $(element).closest(".form-group").addClass("error").addClass("has-error");
     },
-    unhighlight: function (element) {
-        console.log("call unhighlight");
+    unhighlight: function(element) {
         $(element).closest(".form-group").removeClass("error").removeClass("has-error");
     }
 });
